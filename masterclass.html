@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Masterclass - Assel Creative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+<header class="fixed w-full bg-white shadow-md z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="index.html" class="flex items-center">
+            <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600">Assel Creative</span>
+        </a>
+        
+        <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Главная</a>
+            <a href="about.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Обо мне</a>
+            <a href="courses.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Курсы</a>
+            <a href="masterclass.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Мастер-классы</a>
+            <a href="services.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Услуги</a>
+            <a href="contacts.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Контакты</a>
+        </div>
+        
+        <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+</header>
+
+<main class="pt-24">
+
+    <!-- Masterclass Section -->
+    <section id="masterclass" class="py-8 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Мастер-классы</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Забронируйте место на ближайшие мастер-классы и получите новые знания и навыки</p>
+            
+            <div class="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl shadow-xl overflow-hidden">
+                <div class="p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="md:w-2/3 mb-8 md:mb-0 md:pr-8">
+                            <h3 class="text-2xl font-bold text-white mb-4">Ближайшие мастер-классы</h3>
+                            <div class="bg-white bg-opacity-20 rounded-lg p-6 mb-6">
+                                <div class="flex items-center justify-between mb-4">
+                                    <h4 class="text-xl font-semibold text-white">Искусственный интеллект для бизнеса</h4>
+                                    <span class="bg-white text-purple-700 text-sm font-medium px-3 py-1 rounded-full">15 мест</span>
+                                </div>
+                                <p class="text-white text-opacity-90 mb-4">Узнайте, как использовать искусственный интеллект для оптимизации бизнес-процессов и повышения эффективности вашей компании.</p>
+                                <div class="flex items-center text-white text-opacity-90 mb-6">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                    </svg>
+                                    <span>25 мая 2023, 18:00</span>
+                                </div>
+                                <a href="contacts.html" class="bg-white text-purple-700 hover:bg-gray-100 font-medium py-2 px-6 rounded-lg transition w-full text-center block">Забронировать место</a>
+
+                            </div>
+                            
+                            <div class="bg-white bg-opacity-20 rounded-lg p-6">
+                                <div class="flex items-center justify-between mb-4">
+                                    <h4 class="text-xl font-semibold text-white">Создание эффективных презентаций</h4>
+                                    <span class="bg-white text-purple-700 text-sm font-medium px-3 py-1 rounded-full">10 мест</span>
+                                </div>
+                                <p class="text-white text-opacity-90 mb-4">Практический мастер-класс по созданию профессиональных и эффективных презентаций, которые впечатлят вашу аудиторию.</p>
+                                <div class="flex items-center text-white text-opacity-90 mb-6">
+                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                    </svg>
+                                    <span>10 июня 2023, 15:00</span>
+                                </div>
+                                <a href="contacts.html" class="bg-white text-purple-700 hover:bg-gray-100 font-medium py-2 px-6 rounded-lg transition w-full text-center block">Забронировать место</a>
+
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/3">
+                            <div class="bg-white rounded-lg shadow-md p-6">
+                                <h4 class="text-lg font-semibold text-gray-800 mb-4">Календарь мастер-классов</h4>
+                                <div id="calendar" class="mb-6">
+                                    <div class="flex justify-between items-center mb-4">
+                                        <button id="prev-month" class="text-purple-600 hover:text-purple-800">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                            </svg>
+                                        </button>
+                                        <h5 id="current-month" class="text-gray-700 font-medium">Май 2023</h5>
+                                        <button id="next-month" class="text-purple-600 hover:text-purple-800">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="grid grid-cols-7 gap-1 text-center text-sm">
+                                        <div class="text-gray-500 font-medium">Пн</div>
+                                        <div class="text-gray-500 font-medium">Вт</div>
+                                        <div class="text-gray-500 font-medium">Ср</div>
+                                        <div class="text-gray-500 font-medium">Чт</div>
+                                        <div class="text-gray-500 font-medium">Пт</div>
+                                        <div class="text-gray-500 font-medium">Сб</div>
+                                        <div class="text-gray-500 font-medium">Вс</div>
+                                    </div>
+                                    <div id="calendar-days" class="grid grid-cols-7 gap-1 text-center mt-2">
+                                        <!-- Calendar days will be generated by JavaScript -->
+                                    </div>
+                                </div>
+                                <div class="flex items-center mb-3">
+                                    <div class="w-3 h-3 rounded-full bg-purple-600 mr-2"></div>
+                                    <span class="text-sm text-gray-600">Мастер-класс</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-3 h-3 rounded-full bg-gray-300 mr-2"></div>
+                                    <span class="text-sm text-gray-600">Нет событий</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-white py-6 mt-16 border-t border-gray-200">
+    <div class="container mx-auto px-4 text-center text-gray-600">
+        © 2025 Assel Creative. Все права защищены.
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

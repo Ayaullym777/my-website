@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Services - Assel Creative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+<header class="fixed w-full bg-white shadow-md z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="index.html" class="flex items-center">
+            <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600">Assel Creative</span>
+        </a>
+
+        <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Главная</a>
+            <a href="about.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Обо мне</a>
+            <a href="courses.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Курсы</a>
+            <a href="masterclass.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Мастер-классы</a>
+            <a href="services.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Услуги</a>
+            <a href="contacts.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Контакты</a>
+        </div>
+
+        <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+</header>
+
+<main class="pt-24 px-4 container mx-auto">
+
+    <section id="services" class="py-8 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Услуги</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Профессиональные услуги в сфере дизайна, медиа и организации мероприятий</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
+                    <div class="h-40 bg-gradient-to-r from-purple-500 to-indigo-600 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Чат-бот для компании</h3>
+                        <p class="text-gray-600 mb-4">Разработка и настройка чат-ботов для автоматизации бизнес-процессов и улучшения коммуникации с клиентами.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">от 30 000 тг</span>
+                            <a href="contacts.html" class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg transition inline-block text-center">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
+                    <div class="h-40 bg-gradient-to-r from-blue-500 to-cyan-600 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Инфографика для бизнеса</h3>
+                        <p class="text-gray-600 mb-4">Создание информативной и привлекательной инфографики для презентации данных и бизнес-информации.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">от 10 000 тг</span>
+                            <a href="contacts.html" class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg transition inline-block text-center">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
+                    <div class="h-40 bg-gradient-to-r from-pink-500 to-red-600 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Дизайн презентаций</h3>
+                        <p class="text-gray-600 mb-4">Профессиональный дизайн презентаций для бизнеса, образования и других целей.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">от 3 000 тг</span>
+                            <a href="contacts.html" class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg transition inline-block text-center">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
+                    <div class="h-40 bg-gradient-to-r from-yellow-500 to-orange-600 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Картинки через ИИ</h3>
+                        <p class="text-gray-600 mb-4">Создание уникальных изображений с помощью искусственного интеллекта для различных целей.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">от 3 000 тг</span>
+                            <a href="contacts.html" class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg transition inline-block text-center">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
+                    <div class="h-40 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Оживление фото</h3>
+                        <p class="text-gray-600 mb-4">Создание анимированных фотографий с эффектом движения для привлечения внимания.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">от 3 000 тг</span>
+                            <a href="contacts.html" class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg transition inline-block text-center">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300">
+                    <div class="h-40 bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
+                        <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Ведение соц.сетей</h3>
+                        <p class="text-gray-600 mb-4">Профессиональное ведение и оформление социальных сетей для бизнеса и личных брендов.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-purple-700">от 15 000 тг</span>
+                            <a href="contacts.html" class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-lg transition inline-block text-center">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-white rounded-xl shadow-md p-8">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Полный прайс-лист услуг</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="text-gray-700">Заставки на LED-экране</span>
+                            <span class="font-semibold text-purple-700">от 12 000 тг</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="text-gray-700">Оформление папок-регистров</span>
+                            <span class="font-semibold text-purple-700">от 5 000 тг</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="text-gray-700">Видеоролики на конкурсы</span>
+                            <span class="font-semibold text-purple-700">от 10 000 тг</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="text-gray-700">Электронные пригласительные</span>
+                            <span class="font-semibold text-purple-700">от 3 000 тг</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="text-gray-700">Бумажные пригласительные</span>
+                            <span class="font-semibold text-purple-700">от 3 000 тг</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="text-gray-700">Заявки на конкурсы и сопровождение</span>
+                            <span class="font-semibold text-purple-700">от 15 000 тг</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="text-gray-700">Дизайн авторских программ, вёрстка</span>
+                            <span class="font-semibold text-purple-700">от 30 000 тг</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="text-gray-700">Создание презентаций</span>
+                            <span class="font-semibold text-purple-700">от 3 000 тг</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="text-gray-700">Создание информационных плакатов</span>
+                            <span class="font-semibold text-purple-700">от 10 000 тг</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="text-gray-700">Перевод текста в аудиофайл</span>
+                            <span class="font-semibold text-purple-700">от 3 000 тг</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="text-gray-700">Фоторедакция</span>
+                            <span class="font-semibold text-purple-700">от 3 000 тг</span>
+                        </div>
+                        <div class="flex justify-between items-center py-3 border-b border-gray-200">
+                            <span class="text-gray-700">Разработка интерактивных заданий</span>
+                            <span class="font-semibold text-purple-700">от 15 000 тг</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600 mb-4">Все работы официально через ИП. Качество и индивидуальный подход гарантирую!</p>
+                    <button id="contact-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-8 rounded-lg transition">Связаться для консультации</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="py-6 bg-gray-100 text-center text-gray-600 text-sm mt-16">
+    &copy; 2025 Assel Creative. Все права защищены.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index - Assel Creative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #8a2be2 0%, #4169e1 100%);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #8a2be2;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .active::after {
+            width: 100%;
+        }
+        
+        .modal {
+            transition: opacity 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        .calendar-day {
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .calendar-day:hover:not(.calendar-day-disabled) {
+            background-color: #e9d5ff;
+            color: #6b21a8;
+        }
+        
+        .calendar-day-selected {
+            background-color: #8b5cf6 !important;
+            color: white !important;
+        }
+        
+        .calendar-day-disabled {
+            color: #d1d5db;
+            cursor: not-allowed;
+        }
+        
+        .contact-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .contact-icon:hover {
+            transform: translateY(-5px);
+        }
+        
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+    </style>
+
+</head>
+<body class="bg-gray-50">
+    
+<header class="fixed w-full bg-white shadow-md z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="index.html" class="flex items-center">
+            <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-600">Assel Creative</span>
+        </a>
+        
+        <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Главная</a>
+            <a href="about.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Обо мне</a>
+            <a href="courses.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Курсы</a>
+            <a href="masterclass.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Мастер-классы</a>
+            <a href="services.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Услуги</a>
+            <a href="contacts.html" class="nav-link text-gray-800 hover:text-purple-600 transition">Контакты</a>
+        </div>
+        
+        <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+</header>
+	<section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 gradient-bg text-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 animate-fadeIn">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Assel Creative — ваши идеи в ярком исполнении!</h1>
+                <p class="text-xl mb-8">Профессиональные услуги в сфере дизайна, медиа и организации мероприятий</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#courses" class="bg-white text-purple-700 font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-100 transition text-center">Записаться на курс</a>
+                    <a href="#contacts" class="bg-transparent border-2 border-white text-white font-semibold py-3 px-6 rounded-lg hover:bg-white hover:text-purple-700 transition text-center">Связаться со мной</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center animate-fadeIn">
+    		<img src="img.png" alt="Creative Image" class="w-96 h-96 rounded-full object-cover shadow-lg">
+	    </div>
+        </div>
+    	</section>
+    
+<footer class="py-6 bg-gray-100 text-center text-gray-600 text-sm">
+    &copy; 2025 Assel Creative. Все права защищены.
+</footer>
+
+</body>
+</html>
